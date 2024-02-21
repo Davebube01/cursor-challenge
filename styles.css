@@ -6,6 +6,9 @@
             #333 10px,
             #333 20px);
     background-size: 40px 40px;
+    cursor: none;
+    color: white;
+    text-align: center;
 }
 
 #cursor {
@@ -35,4 +38,18 @@
 .first-div:hover #cursor
 {
     transform: translate(-1px,5px) scale(1);
+}
+
+@keyframes animate
+{
+    0%
+    {
+        filter: drop-shadow(0 0 5px #0f0) drop-shadow(0 0 15px #0f0)
+        drop-shadow(0 0 30px #0f0) hue-rotate(0deg);
+    }
+    100%
+    {
+        filter: drop-shadow(0 0 5px #0f0) drop-shadow(0 0 15px #0f0)
+        drop-shadow(0 0 30px #0f0) hue-rotate(360deg);  
+    }
 }
